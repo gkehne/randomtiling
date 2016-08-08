@@ -1,6 +1,8 @@
 #Gregory Kehne
 #
-#(about)
+#This creates a bxb window into a tiling of the plane by 1x2 (and, less reliably, 1x3, 1x4, etc.) blocks.
+#it does this by randomly choosing which block to place next on any empty spaces on a diagonal, which
+#progresses from one corner to the other. 
 
 import displaytiling
 import random
