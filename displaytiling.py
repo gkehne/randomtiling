@@ -1,8 +1,9 @@
 from PIL import Image, ImageDraw, ImageOps
 
-#choose which one to use: printbrd is text ouptut
-#picturebrd is image output of two types: temporary .bmp and permanent .jpg
-#(choose between them by selectively commenting out lines at the bottom of this)
+#choose how to display the board:
+#displaytype="text" for text output
+#displaytype="temp" for a temporary image
+#displaytype="filename" for .jpg image output
 def disp(board, displaytype):
 	dt=displaytype.lower()
 	if dt=="text":
