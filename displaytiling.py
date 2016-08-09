@@ -1,3 +1,9 @@
+#Gregory Kehne
+#
+#This file contains the methods that display the 1xn tiling that tiler.py creates.
+#It can display as text output, temporary images, or saved images.
+
+
 from PIL import Image, ImageDraw, ImageOps
 
 #choose how to display the board:
