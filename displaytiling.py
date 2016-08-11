@@ -1,14 +1,16 @@
 # Gregory Kehne
 #
-# This contains the code to display block tilings in one of a few fomrats.
+# This file contains the methods that display the 1xn tiling that tiler.py 
+# creates. It can display as text output, temporary images, or saved images.
+
 
 from PIL import Image, ImageDraw
 
 
-# this displays the boards in the desired format.
-# "text" gives text output.
-# "temp" gives temporary image output.
-# "filename" gives "filename.jpg" output.
+# choose how to display the board:
+# displaytype="text" for text output
+# displaytype="temp" for a temporary image
+# displaytype="filename" for .jpg image output
 def disp(board, displaytype):
 	dt = displaytype.lower()
 	if dt == "text":
