@@ -1,6 +1,9 @@
 # Gregory Kehne
 #
-# (about)
+# This program generates a square window of fixed size into a planar tiling
+# of 1x2 blocks that is randomly generated. It works by adding block positions
+# that are randomly chosen from the frontier of possiblities on a diagonal
+# that sweeps from one corner to the opposite corner. 
 
 import displaytiling
 import random
@@ -213,3 +216,7 @@ def tile(b, displaytype):
 			m = l[r]
 			fill(board, m[0], m[1], m[2])
 	displaytiling.disp(board, displaytype)
+
+# Default behavior: a 20x20 tiling of 1x2 blocks, displayed as a temporary image.
+if __name__ == '__main__':
+	tile(20, "temp")
