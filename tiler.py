@@ -1,14 +1,11 @@
 # Gregory Kehne
 #
-# This creates a bxb window into a tiling of the plane by 1x2 (and, less
-# reliably, 1x3, 1x4, etc.) blocks. It does this by randomly choosing
-# which block to place next on any empty spaces on a diagonal, which
-# progresses from one corner to the other.
+# (about)
 
 import displaytiling
 import random
 
-# Length of tile. This works for tile=2, tile>=3 is increasingly unreliable.
+# length of tile. This works for tile=2, tile>=3 is increasingly unreliable.
 tilesize = 2
 
 
@@ -216,8 +213,3 @@ def tile(b, displaytype):
 			m = l[r]
 			fill(board, m[0], m[1], m[2])
 	displaytiling.disp(board, displaytype)
-
-
-# Default behavior: create a 20x20 1x2 tiling displayed as a temporary image.
-if __name__ == '__main__':
-	tile(20, "temp")
